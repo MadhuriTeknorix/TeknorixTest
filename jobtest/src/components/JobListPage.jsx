@@ -178,7 +178,7 @@ const JobListPage = () => {
                   View Details
                 </Link>
 
-                {/* Apply Now button */}
+              
                 <button
                   className="apply-btn"
                   onClick={() => window.open(job.applyUrl, '_blank')}
