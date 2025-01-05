@@ -84,14 +84,14 @@ const JobListPage = () => {
       function: ''
     };
     setFilters(clearedFilters);
-    localStorage.clear(); // Remove all filters from localStorage
+    localStorage.clear(); 
   };
 
-  // Remove individual filter
+  
   const removeFilter = (filterName) => {
     const updatedFilters = { ...filters, [filterName]: '' };
     setFilters(updatedFilters);
-    localStorage.setItem(filterName, ''); // Remove specific filter from localStorage
+    localStorage.setItem(filterName, ''); 
   };
 
   return (
@@ -173,7 +173,7 @@ const JobListPage = () => {
               <p>{job.department.title}</p>
               <p>{job.location.title}</p>
               <div className="job-actions">
-                {/* View Details button */}
+                
                 <Link to={`/jobs/${job.id}`} className="view-btn">
                   View Details
                 </Link>

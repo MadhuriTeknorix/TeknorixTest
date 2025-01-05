@@ -9,7 +9,7 @@ const JobDetailsPage = () => {
   const [otherJobs, setOtherJobs] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-  const navigate = useNavigate(); // Hook to navigate programmatically
+  const navigate = useNavigate(); 
 
 
 
@@ -29,9 +29,9 @@ const JobDetailsPage = () => {
     fetchJobDetails();
   }, [id]);
 
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>{error}</div>;
-  if (!job) return <div>Job not found</div>;
+  if (loading) return <div>Loading...</div>
+  if (error) return <div>{error}</div>
+  if (!job) return <div>Job not found</div>
 
   return (
     <div className="job-details-container">
